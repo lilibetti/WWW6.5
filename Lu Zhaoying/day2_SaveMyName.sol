@@ -24,9 +24,6 @@ contract SaveMyInfo {
         gender = _gender;
     }
 
-    //  retrieve 函数：专门用来检索（获取）数据
-    // 注意：加上 view 修饰符，表示它只读取数据，不修改数据
-    // 这样调用它就是免费的（不需要消耗 Gas）
     function retrieve() public view returns (
         string memory,
         string memory,
